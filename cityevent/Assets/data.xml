@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCityEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CityEvent>
+		<Header>Детский бассейн</Header>
+		<Description>Бассейн для детей, проведите незабываемые выходные с разными развлечениями</Description>
+		<Image>../../../Assets/EventPics/1.jfif</Image>
+		<Date>01.01.2023</Date>
+		<Category>1</Category>
+		<Price>1000</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Мастер-класс живописи</Header>
+		<Description>Совсем скоро весенний праздник! И пора задуматься о подарках, которые вы подарите своим мамам, бабушкам, сёстрам и подругам. Самый тёплый и приятный подарок - это подарок, в который вы вложили душу и любовь! Мы приглашаем вас создать картину к 8 марта, под руководством художника Академии творчества Новосибирска! Посетить мастер-класс можно вместе с ребенком и провести предпраздничный выходной вместе за творческим процессом. Результатом мастер-класса будет готовая картина 20*30, написанная маслянными красками, которую вы заберете с собой!
+		</Description>
+		<Image>../../../Assets/EventPics/2.jfif</Image>
+		<Date>05.03.2023</Date>
+		<Category>3</Category>
+		<Price>0</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Чемпионат по футболу</Header>
+		<Description>Местные комманды будут сражаться за звание лучшего в городе!</Description>
+		<Image>../../../Assets/EventPics/3.jfif</Image>
+		<Date>12.06.2023</Date>
+		<Category>2</Category>
+		<Price>0</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Вечерние огни Новосибирска</Header>
+		<Description>Мы проедем по основным точкам и взглянем на Новосибирск другими глазами. Эта экскурсия прекрасно подойдет тем путешественникам, кто хочет провести время с пользой и интересно, ожидая свой рейс или после завершения интенсивного рабочего дня. В теплое время года вы посетите основные тусовочные места, открытые веранды и уютные дворики, где прячутся очаровательные кафе и бары.</Description>
+		<Image>../../../Assets/EventPics/4.jfif</Image>
+		<Date>05.03.2023</Date>
+		<Category>4</Category>
+		<Price>4000</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Что? Где? Когда?</Header>
+		<Description>Вам нравятся интеллектуальные игры? Любите квизы, но устали щёлкать простые вопросы, а хотите чего-то посложнее? Хотите узнать побольше о таинственных АЛЬФАХ, ИКСАХ, ершонимах, заменах, пропусках, дуплетах? Мечтаете быть с профессиональными редакторами вопросов на одной волне? Желаете сравнить свои результаты с другими командами по всему миру?</Description>
+		<Image>../../../Assets/EventPics/5.jpg</Image>
+		<Date>08.05.2023</Date>
+		<Category>5</Category>
+		<Price>0</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>КОРОЛЕВА ТАНЦПОЛА!</Header>
+		<Description>ГЛАВНЫЙ ПРИЗ В РОЗЫГРЫШЕ СРЕДИ ДЕВУШЕК: ТОПОВЫЕ НАУШНИКИ AirPods Pro!</Description>
+		<Image>../../../Assets/EventPics/6.jfif</Image>
+		<Date>04.04.2023</Date>
+		<Category>6</Category>
+		<Price>1000</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Родительская академия</Header>
+		<Description>2023 год объявлен Президентом Российской Федерации годом педагога и наставника. Первыми наставниками в жизни каждого человека являются его родители, от мудрости и чуткости которых зависит многое на жизненном пути ребенка.</Description>
+		<Image>../../../Assets/EventPics/8.jpg</Image>
+		<Date>15.04.2023</Date>
+		<Category>7</Category>
+		<Price>0</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Винное казино</Header>
+		<Description>Винное казино – интерактивная винная игра, где гости вслепую дегустируют вина и отгадывают сорт, страну и регион производства по цвету, аромату и интересным подсказкам сомелье.</Description>
+		<Image>../../../Assets/EventPics/9.jpg</Image>
+		<Date>12.04.2023</Date>
+		<Category>8</Category>
+		<Price>2500</Price>
+	</CityEvent>
+	<CityEvent>
+		<Header>Голодный Зверь</Header>
+		<Description>11 марта группа «Голодный Зверь » приглашает всех на концерт по случаю своего 10-летия в Ульяновске!</Description>
+		<Image>../../../Assets/EventPics/10.jpg</Image>
+		<Date>11.03.2023</Date>
+		<Category>9</Category>
+		<Price>1000</Price>
+	</CityEvent>
+</ArrayOfCityEvent>

@@ -1,0 +1,199 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:cityevent.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="cityevent.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="cityevent">
+
+	<Design.DataContext>
+		<vm:MainWindowViewModel/>
+	</Design.DataContext>
+
+	<Window.Resources>
+		<vm:BitmapAssetValueConverter x:Key="variableImage"/>
+	</Window.Resources>
+
+	<Window.DataTemplates>
+		<DataTemplate>
+			<Border Background="Red" BorderBrush="BurlyWood" BorderThickness="2" Margin="3">
+				<Grid RowDefinitions="150, 200" ColumnDefinitions="230">
+					<Image Grid.Row="0" Height="150" Width="150" Source="{Binding Image, Converter={StaticResource variableImage}}"></Image>
+					<StackPanel Grid.Row="1">
+						<Border Background="Red" BorderBrush="BurlyWood" BorderThickness="2" Margin="3">
+							<TextBlock FontWeight="Bold" FontSize="15" Text="{Binding Header}"></TextBlock>
+						</Border>
+						<Border Background="Red" BorderBrush="BurlyWood" BorderThickness="2" Margin="3">
+							<TextBlock FontWeight="Bold" FontSize="15" Text="{Binding Date}"></TextBlock>
+						</Border>
+						<Border Background="Red" BorderBrush="BurlyWood" BorderThickness="2" Margin="3">
+							<TextBlock Text="{Binding Description}" TextWrapping="Wrap"></TextBlock>
+						</Border>
+						<Border Background="Red" BorderBrush="BurlyWood" BorderThickness="2" Margin="3">
+							<TextBlock FontWeight="Bold" FontSize="15" Text="{Binding Price}" ></TextBlock>
+						</Border>
+					</StackPanel>
+				</Grid>
+			</Border>
+		</DataTemplate>
+	</Window.DataTemplates>
+
+	<TabControl>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/pics/ForChildren.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Для детей" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox Background="Green" Items="{Binding CustomItems1}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/pics/Sport.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Спорт" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox Background="Green" Items="{Binding CustomItems2}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/pics/Culture.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Культура" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox Background="Green" Items="{Binding CustomItems3}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/pics/Excursions.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Экскурсии" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox Background="Green" Items="{Binding CustomItems4}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/pics/Lifestyle.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Образ жизни" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox Background="Green" Items="{Binding CustomItems5}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/pics/Party.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Вечеринки" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox Background="Green" Items="{Binding CustomItems6}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/pics/Education.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Образование" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox Background="Green" Items="{Binding CustomItems7}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/pics/Online.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Онлайн" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox Background="Green" Items="{Binding CustomItems8}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+
+		</TabItem>
+		<TabItem>
+			<TabItem.Header>
+				<Grid ColumnDefinitions="*, 5*">
+					<Image Source="/Assets/pics/Show.png" Width="24" Height="24" Margin="0,0,5,0" />
+					<TextBlock Grid.Column="1" Text="Шоу" FontSize="18"/>
+				</Grid>
+			</TabItem.Header>
+
+			<ListBox Background="Green" Items="{Binding CustomItems9}">
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+
+		</TabItem>
+	</TabControl>
+
+</Window>
